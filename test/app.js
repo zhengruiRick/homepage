@@ -6,12 +6,12 @@ app.post("/api/test", createMessage);
 app.delete("/api/test/:id", deleteMessage);
 
 var connectionString = 'mongodb://127.0.0.1:27017/webdev-homework'; // for local
-if(process.env.MLAB_USERNAME_WEBDEV) { // check if running remotely
-    var username = process.env.MLAB_USERNAME_WEBDEV; // get from environment
-    var password = process.env.MLAB_PASSWORD_WEBDEV;
-    connectionString = 'mongodb://' + username + ':' + password;
-    connectionString += '@ds151662.mlab.com:51662/heroku_3zpjlpvn'; // user yours
-}
+// if(process.env.MLAB_USERNAME_WEBDEV) { // check if running remotely
+//     var username = process.env.MLAB_USERNAME_WEBDEV; // get from environment
+//     var password = process.env.MLAB_PASSWORD_WEBDEV;
+//     connectionString = 'mongodb://' + username + ':' + password;
+//     connectionString += '@ds151662.mlab.com:51662/heroku_3zpjlpvn'; // user yours
+// }
 // Replace "@ds157268.mlab.com:57268/heroku_nh37fqq4"
 // above with your own URL given to you by mLab
 //'mongodb://<dbuser>:<dbpassword>@ds151662.mlab.com:51662/heroku_3zpjlpvn'
