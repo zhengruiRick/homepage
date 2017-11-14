@@ -1,0 +1,194 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Evaluation for DripDrop</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <div class="blog-header">
+        <div class="container">
+            <h1 class="blog-title">IS4300 I7</h1>
+        </div>
+    </div>
+</header>
+
+<main role="main" class="container">
+
+    <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+            <div class="blog-post" id="top">
+                <h2 class="blog-post-title">Evaluation for DripDrop</h2>
+                <p class="blog-post-meta">Nov. 14, 2017 by <a href="rickzheng.com">Rui Zheng</a></p>
+
+                <p>This web application has a user-friendly interface and is very straight forward and easy to use. Good job overall. I will work through 3 tasks used in P5 using for heuristic evaluation in first section and then summarize all problems I found in my second section. I am using Google Chrome Ver. 62.0.3202.89 for this evaluation.
+                </p>
+                <hr>
+
+                <p>
+                <h2 id="he">Heuristic Evaluation</h2>
+                <h3>Simple and Natural Dialogue / Aesthetics & Min. Design</h3>
+                <p>When I work through the 3 tasks, I think the DripDrop did well in this part. Easy enough to understand and use all the functions provided. One thing need to point that the process bar and processed files section seems redundant in the upload page. And I will discuss it in the problem part.
+                </p>
+                <p><img src="sc/sc1.png"></p>
+
+                <h3>Speak the User’s Language</h3>
+                <p>It speaks the user’s language but on thing I found may confuse the use is on the my account page,</p>
+                <p><img src="sc/sc2.png"></p>
+                <p>The buttons in the red rectangle is not clear enough for the function. I know it may be still developing and is not part of test case.</p>
+
+                <h3>Minimize User Memory Load</h3>
+                <p>DripDrop did well on this part. First it is using the webpage, which means user don’t need to install a software for this, second, it provides the function for delete uploaded file. These two points indicate it is doing well on this point.
+                </p>
+
+                <h3>Consistency</h3>
+                <p>DripDrop did well on this part. The simple and easy enough user interface make it looks the same on no matter the big or small screens and it is also the same design language for Upload and Download page
+                </p>
+
+                <h3>Feedback</h3>
+                <p>Since it is a web application, the exit is clear enough, just close the brower. But one thing I come up with is that what if user need to cancel the upload for a big file. Since the function of uploading file is not actually working for now, I cannot judge this part but for what DripDrop have now, it is good.
+                </p>
+
+                <h3>Shortcuts</h3>
+                <p>So far, I didn’t meet any of the error message. However, I think the error here will main happen in the following situations:
+                <ul>
+                <li>
+                    Fail to upload/Download the file
+                </li>
+                <li>
+                    Wrong Code to download file
+                </li>
+                <li>
+                    Wrong user name/password
+                </li>
+                </ul>
+                    DripDrop should working on these situations for a good error message when these functions are implemented.
+                </p>
+
+                <h3>Prevent Errors</h3>
+                <p>Again, as the Good Error Message section, I didn’t see any error or potential error that can happy in the function that I need to test in this assignment. But for the download file function, it is clear missing the confirm file part, which may cause error.
+                </p>
+
+                <h3>Help and Documentation</h3>
+                <p>I don’t think DripDrop needs a help and documentation since it is easy and obvious enough to use.
+                </p>
+                </p>
+
+                <h2 id="p">Problems</h2>
+                <ol>
+                    <li>
+                        <h5>
+                            (Major) Advanced Upload  Time Limit, Calendar is working in Advanced Upload is not working. At least I don’t know if it the date I choose. My suggestion is make the calendar work as well as add a confirm page after selecting the date and time.
+                        </h5>
+                    </li>
+
+                    <li>
+                        <h5>
+                            (Cosmetic) The highlight in Advance Upload is not function well. The highlighted background (Grey in the screenshot) seems weird. My suggestion is remove the background or make it filled over the button area.
+                            <p>
+                                <img src="sc/sc3.png">
+                            </p>
+                        </h5>
+                    </li>
+
+
+                    <li>
+                        <h5>
+                            (Cosmetic) Progress bar looks wired for an unfamiliar user. I guess it is for user to see the process for Upload or have many storage the use used but it doesn’t have any function for now, which is totally fine. My suggestion is add a text somewhere is indicate the usage for this bar.
+                            <p>
+                                <img src="sc/sc4.png">
+                            </p>
+
+                        </h5>
+                    </li>
+
+                    <li>
+                        <h5>
+                            (Minor) After clicking “OK” after showing the “File is ready to be shared” dialog, it nav to the home page, I think a better way is direct to all the files the user shared so user can modify the file(s).
+                        </h5>
+                    </li>
+
+                    <li>
+                        <h5>
+                            (Cosmetic) No re-check for the CODE on the upload page. After the sender upload the file and if he clicks “OK” or “cancel” by accident, the only way he can do is nav back to “My account”, but I think since the processed files area on the screenshot below is empty enough, I think developers can consider to add code somewhere.
+                            <p>
+                                <img src="sc/sc5.png">
+                            </p>
+                        </h5>
+                    </li>
+
+                    <li>
+                        <h5>
+                            For the download the file function, it is very clear but I think after enter the code, the website should provide a pre-view for the file (maybe just file name and shared by who) to make sure the user is downloading the file he wants.
+
+                        </h5>
+                    </li>
+
+
+                </ol>
+
+
+
+            </div><!-- /.blog-post -->
+
+
+            <nav class="blog-pagination">
+                <a class="btn btn-outline-primary" href="Rui%20Zheng%20-%20IS4300%20I7.pdf">Dowload PDF</a>
+            </nav>
+
+        </div><!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-sm-auto blog-sidebar">
+            <div class="sidebar-module sidebar-module-inset">
+                <h4>About</h4>
+                <p>Evaluation for DripDrop</p>
+                <p>Author:
+
+                    Rui Zheng zheng.rui@husky.neu.edu</p>
+            </div>
+            <div class="sidebar-module">
+                <h4>Navi</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#top">Top</a></li>
+                    <li><a href="#he">Heuristic Evaluation</a></li>
+                    <li><a href="#p">Problems</a></li>
+                </ol>
+            </div>
+            
+        </aside><!-- /.blog-sidebar -->
+
+    </div><!-- /.row -->
+
+</main><!-- /.container -->
+
+<footer class="blog-footer">
+    <p class="text-center">Rui Zheng | Northeastern University | College of Computer and Information Science</p>
+</footer>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../../../assets/js/vendor/popper.min.js"></script>
+<script src="../../../../dist/js/bootstrap.min.js"></script>
+</body>
+</html>
